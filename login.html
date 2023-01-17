@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	
+          function login( ps,n)
+         {
+           
+           if(ps=="" || n=="")
+            {
+	           alert("No blank values allowed");
+	           
+            }
+           else
+            {
+            alert("Successful");
+            }
+         }
+ 	</script>
+</head>
+	<body class="login"  >
+		<form class="loginbox" action="insertlog.php" method="post">
+			<h1>Login</h1>
+			<div class="textbox" >
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" id="user" placeholder="Username" name="id">
+				
+			</div>
+
+			<div class="textbox" >
+				<i class="fa fa-lock" aria-hidden="true"></i>
+				<input type="password" id="pss" placeholder="Password" name="p1" >
+		    </div>
+		
+			<button class="btn" onclick="login(nam.value,pas.value)"><a href="index.html">Login in</a></button>
+			<span class="here"> Don't have account? <a href="from.html">Sign up here</a></span>	
+		 
+		</form>
+   
+     </body>
+</html>
+<style type="text/css">
+	.body{
+
+	}
+</style>>

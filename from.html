@@ -1,0 +1,81 @@
+<html>
+
+<head> <h3>Registration form</h3>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+function user1()
+{
+var n,x,y;
+n=document.registor.id.value;
+x=document.registor.p1.value;
+y=document.registor.p2.value;
+if(isNaN(n)==false)
+{
+alert("enter characters in username");
+}
+if(x!=y)
+{
+alert("password incorrect");
+}
+
+}
+</script>            
+
+</head>
+
+<body class="registor">
+	<div class="reg">
+<table>
+<form  name="registor" action="insert.php" method="post">
+<tr>
+<td>First name<br></td>
+<td> <input type="text" required id="name" name="name"></td>
+</tr>
+<tr>
+<td>Last name<br></td> 
+<td><input type="text" required id="name" name="lname"><br></td></tr>
+<tr>
+<td>
+Date Of Birth<br></td>
+<td><input type="date" required id="name" name="dob"><br></td>
+</tr>
+<tr>
+<td>Stream<br></td><td><select id="name" name="str">
+	<option>Art</option>
+	<option>Science</option>
+	<option>Commerce</option>
+	<option>Other</option>
+</select><br></td>
+</tr>
+<tr>
+<td>Gender<br></td>
+<td> M<input type="radio" value='M' name="rd1" id="ma" checked>
+ F<input type="radio" value='F' name="rd1" id="ma"></td></tr>
+ <tr>
+<td>Mobile Number<br></td>
+<td><input type="tye" minlength="6" maxlength="10"  id="name" name="mobno" required><br></td>
+</tr>
+<tr>
+<td>Email id<br></td> 
+<td><input type="email" id="name" name="email" required><br></td>
+</tr>
+<tr>
+<td>User Name<br></td><td><input type="text"  name="id" id="name" required><br></td>
+</tr>
+<tr >
+<td>Password<br></td><td><input type="password" name="p1" id="name" required><br></td>
+</tr>
+<tr>
+<td >Confirm Password<br></td><td><input type="password" name="p2" id="name" required><br></td>
+</tr>
+</table>
+<input type="checkbox" id="ch" required>I agree to the term and condition of your policy,I agree to the education related services<br>
+<input type="button" value="CONFIRM" id="sub" onclick="user1()">
+<input type="Submit" class="" id="sub" onclick="user1()">
+
+<input type="reset" value="RESET" id="sub"><br>
+<span>Already have account?<a href="login.html">Login here</a></span>
+</form>
+</div>
+</body>
+</html>
